@@ -1,0 +1,9 @@
+limine-mkinitcpio-hook
+limine-snapper-sync
+monique
+nautilus-open-any-terminal
+paru
+paru-debug
+sddm-astronaut-theme
+visual-studio-code-bin
+zotero-bin
