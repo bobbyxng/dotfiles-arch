@@ -24,11 +24,19 @@ zshaddhistory() {
 
 # aliases
 alias vim=nvim
+alias code="code --password-store=gnome-libsecret"
 alias tuvpn-split='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-split'
 alias tuvpn-full='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-full'
 
 # fastfetch
 fastfetch
+
+# Gurobi
+export GUROBI_HOME="$(echo $HOME/gurobi/gurobi*/linux64 | tr ' ' '\n' | sort -V | tail -1)"
+if [ -d "$GUROBI_HOME" ]; then
+    export PATH="$PATH:$GUROBI_HOME/bin"
+    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$GUROBI_HOME/lib"
+fi
 
 # zsh plugins
 # Autosuggestions (ghost-text suggestions from history)
