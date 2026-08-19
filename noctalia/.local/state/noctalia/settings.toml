@@ -3,7 +3,7 @@ config_version = 12
 [bar.default]
 center = [ "archbob", "notifications", "control-center", "clock" ]
 end = [ "tray", "spacer_3", "clipboard", "group:g2", "group:g4", "group:g3", "spacer_5", "session" ]
-start = [ "workspaces", "group:g1", "launcher", "mirror" ]
+start = [ "workspaces", "group:g1", "launcher", "mirror", "status" ]
 
     [[bar.default.capsule_group]]
     accordion = false
@@ -227,12 +227,19 @@ widget_order = [
         show_unlock_hint = true
         show_weather = true
 
+[plugin_settings."aristides/udiskie"]
+manager_open_near_click = true
+manager_placement = "attached"
+
+[plugin_settings."cleboost/hotspot"]
+password = "12345678"
+
 [plugin_settings."noctalia/bitwarden"]
 clear_clipboard_seconds = 10
 server_url = "https://vault.bitwarden.eu"
 
 [plugins]
-enabled = [ "noctalia/bitwarden", "nightwatch75/file-search", "elijaharch/wl-screen-mirror" ]
+enabled = [ "noctalia/bitwarden", "nightwatch75/file-search", "elijaharch/wl-screen-mirror", "aristides/udiskie" ]
 
 [shell]
 clipboard_history_max_entries = 20
@@ -295,6 +302,10 @@ type = "spacer"
 
 [widget.spacer_5]
 type = "spacer"
+
+[widget.status]
+hide_when_empty = true
+type = "aristides/udiskie:status"
 
 [widget.volume]
 mute_color = "tertiary"
