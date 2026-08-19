@@ -2,7 +2,6 @@
 .local/state/noctalia/community-templates/
 .local/state/noctalia/community-palettes/
 .local/state/noctalia/plugin-cache/
-.local/state/noctalia/plugins/
 .local/state/noctalia/notification_history*
 .local/state/noctalia/recently_used.json
 .local/state/noctalia/screen_time.json
