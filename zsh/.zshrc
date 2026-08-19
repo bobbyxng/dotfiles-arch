@@ -1,6 +1,8 @@
 # bindings
 bindkey -v
 bindkey '^[[3~' delete-char # delete key
+bindkey "^A" beginning-of-line
+bindkey "^E" end-of-line
 
 # local bin
 export PATH="$HOME/bin:$PATH"
