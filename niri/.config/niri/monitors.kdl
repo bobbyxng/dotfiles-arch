@@ -12,7 +12,7 @@ output "Lenovo Group Limited LEN T2424pA V1H16927" {
     position x=1801 y=-1364
 }
 
-output "DP-9" {
+output "Lenovo Group Limited T32p-30 V30BC92V" {
     mode "3840x2160@59.997"
     scale 1.25
     position x=-1271 y=-1728
