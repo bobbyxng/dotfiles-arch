@@ -1,0 +1,42 @@
+{
+    "workbench.colorTheme": "Light Modern",
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
+    "interactiveWindow.executeWithShiftEnter": true,
+    "jupyter.interactiveWindow.creationMode": "perFile",
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "jupyter.askForKernelRestart": false,
+    "jupyter.runStartupCommands": "",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "terminal.integrated.profiles.linux": {
+        "zsh": {
+            "path": "/usr/bin/zsh"
+        }
+    },
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "terminal.integrated.fontSize": 14,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.panel.showLabels": false,
+    "redhat.telemetry.enabled": false,
+    "jupyter.enableExtendedPythonKernelCompletions": false,
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "cSpell.language": "en-GB,de",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "claudeCode.preferredLocation": "panel",
+    "chat.viewSessions.orientation": "stacked",
+    "workbench.editorAssociations": {
+        "*.copilotmd": "vscode.markdown.preview.editor",
+        "*.pdf": "latex-workshop-pdf-hook"
+    },
+    "terminal.integrated.stickyScroll.enabled": false,
+    "python.analysis.typeCheckingMode": "standard",
+    "terminal.integrated.windowsUseConptyDll": false,
+    "notebook.output.scrolling": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
+}
