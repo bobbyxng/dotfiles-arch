@@ -1,5 +1,4 @@
 {
-    "workbench.colorTheme": "Light Modern",
     "jupyter.notebookFileRoot": "${workspaceFolder}",
     "interactiveWindow.executeWithShiftEnter": true,
     "jupyter.interactiveWindow.creationMode": "perFile",
@@ -38,5 +37,6 @@
     "notebook.output.scrolling": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
-    }
+    },
+    "workbench.colorTheme": "Light 2026"
 }
