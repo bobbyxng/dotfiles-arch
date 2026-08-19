@@ -26,7 +26,6 @@ zshaddhistory() {
 
 # aliases
 alias vim=nvim
-alias code="code --password-store=gnome-libsecret"
 alias tuvpn-split='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-split'
 alias tuvpn-full='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-full'
 
