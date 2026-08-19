@@ -2,15 +2,6 @@
 
 Personal dotfiles for arch + niri + noctalia setup, managed with GNU Stow.
 
-## Structure
-
-- `bash/` — `.bashrc`
-- `zsh/` — `.zshrc` (autosuggestions, syntax-highlighting, starship)
-- `starship/` — `~/.config/starship.toml`
-- `vscode/` — `~/.config/Code/User/settings.json`
-- `git/` — `.gitconfig`
-- ...
-
 ## Adding new dotfiles
 
 ```bash
