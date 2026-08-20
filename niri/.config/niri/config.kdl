@@ -6,6 +6,7 @@
 // Input device configuration.
 // Find the full list of options on the wiki:
 // https://niri-wm.github.io/niri/Configuration:-Input
+    
 input {
     keyboard {
         xkb {
@@ -272,6 +273,7 @@ layout {
 spawn-at-startup "noctalia"
 spawn-at-startup "gnome-keyring-daemon" "--start" "--components=secrets"
 spawn-at-startup "kitty" "--single-instance" "--start-as=hidden"
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 
 layer-rule {
 
@@ -351,6 +353,12 @@ window-rule {
 window-rule {
     geometry-corner-radius 10
     clip-to-geometry true
+}
+
+// Custom program settings
+window-rule {
+    match app-id="kitty"
+    default-column-width { proportion 0.33; }
 }
 
 binds {
