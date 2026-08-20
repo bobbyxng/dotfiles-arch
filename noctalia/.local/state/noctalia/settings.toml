@@ -329,6 +329,9 @@ type = "text"
     middle = "settings-open-widget"
     right = "notification-dnd-toggle"
 
+[widget.clipboard.actions]
+right = "clipboard-clear"
+
 [widget.clock]
 format = "{:%H:%M ∙ %a, %d. %b}"
 
