@@ -45,6 +45,17 @@ start = [ "workspaces", "group:g1", "launcher", "mirror", "status" ]
     opacity = 1.0
     padding = 6.0
 
+[calendar]
+enabled = true
+refresh_minutes = 5
+
+    [calendar.account.mailbox]
+    name = "Mailbox"
+    provider = "custom"
+    server_url = "https://dav.mailbox.org"
+    type = "caldav"
+    username = "bxio@mailbox.org"
+
 [control_center.calendar]
 show_week_numbers = true
 
