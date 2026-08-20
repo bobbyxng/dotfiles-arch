@@ -29,9 +29,6 @@ alias vim=nvim
 alias tuvpn-split='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-split'
 alias tuvpn-full='pixi run --manifest-path $HOME/tuvpn/pixi.toml tuvpn-full'
 
-# fastfetch
-fastfetch
-
 # Gurobi
 export GUROBI_HOME="$(echo $HOME/gurobi/gurobi*/linux64 | tr ' ' '\n' | sort -V | tail -1)"
 if [ -d "$GUROBI_HOME" ]; then
