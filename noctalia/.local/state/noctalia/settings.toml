@@ -1,8 +1,8 @@
 config_version = 12
 
 [bar.default]
-center = [ "archbob", "notifications", "control-center", "clock" ]
-end = [ "tray", "spacer_3", "group:g2", "group:g4", "spacer_5", "session" ]
+center = [ "archbob", "clock" ]
+end = [ "tray", "spacer_3", "group:g2", "group:g4", "group:g3", "spacer_6", "session" ]
 start = [ "workspaces", "group:g1", "spacer_4", "launcher", "clipboard", "mirror", "status", "spacer_2", "ram", "battery" ]
 
     [[bar.default.capsule_group]]
@@ -32,6 +32,16 @@ start = [ "workspaces", "group:g1", "spacer_4", "launcher", "clipboard", "mirror
     fill = "surface_variant"
     id = "g4"
     members = [ "volume", "brightness" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g3"
+    members = [ "notifications", "control-center" ]
     opacity = 1.0
     padding = 6.0
 
@@ -319,7 +329,7 @@ type = "spacer"
 [widget.spacer_4]
 type = "spacer"
 
-[widget.spacer_5]
+[widget.spacer_6]
 type = "spacer"
 
 [widget.status]
