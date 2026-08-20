@@ -13,6 +13,7 @@
     },
     "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font Mono",
     "terminal.integrated.fontSize": 14,
+    "terminal.integrated.confirmOnExit": "never",
     "workbench.editor.tabSizing": "shrink",
     "workbench.panel.showLabels": false,
     "redhat.telemetry.enabled": false,
