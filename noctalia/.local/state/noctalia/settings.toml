@@ -2,8 +2,8 @@ config_version = 12
 
 [bar.default]
 center = [ "archbob", "notifications", "control-center", "clock" ]
-end = [ "tray", "spacer_3", "clipboard", "group:g2", "group:g4", "group:g3", "spacer_5", "session" ]
-start = [ "workspaces", "group:g1", "launcher", "mirror", "status" ]
+end = [ "tray", "spacer_3", "group:g2", "group:g4", "spacer_5", "session" ]
+start = [ "workspaces", "group:g1", "spacer_4", "launcher", "clipboard", "mirror", "status", "spacer_2", "ram", "battery" ]
 
     [[bar.default.capsule_group]]
     accordion = false
@@ -12,16 +12,6 @@ start = [ "workspaces", "group:g1", "launcher", "mirror", "status" ]
     fill = "surface_variant"
     id = "g1"
     members = [ "wallpaper", "settings" ]
-    opacity = 1.0
-    padding = 6.0
-
-    [[bar.default.capsule_group]]
-    accordion = false
-    accordion_direction = "end"
-    enabled = true
-    fill = "surface_variant"
-    id = "g3"
-    members = [ "ram", "battery" ]
     opacity = 1.0
     padding = 6.0
 
@@ -49,15 +39,24 @@ start = [ "workspaces", "group:g1", "launcher", "mirror", "status" ]
 enabled = true
 refresh_minutes = 5
 
+    [calendar.account.bobbyxng]
+    color = "primary"
+    name = "Google"
+    type = "google"
+
     [calendar.account.mailbox]
+    color = "tertiary"
     name = "Mailbox"
     provider = "custom"
     server_url = "https://dav.mailbox.org"
     type = "caldav"
     username = "bxio@mailbox.org"
 
-[control_center.calendar]
-show_week_numbers = true
+[control_center]
+width = 850
+
+    [control_center.calendar]
+    show_week_numbers = true
 
 [dock]
 background_opacity = 0.69999998435378075
@@ -302,13 +301,22 @@ type = "text"
     middle = "settings-open-widget"
     right = "notification-dnd-toggle"
 
+[widget.clock]
+format = "{:%H:%M ∙ %a, %d. %b}"
+
 [widget.media]
 enabled = false
 
 [widget.mirror]
 type = "elijaharch/wl-screen-mirror:mirror"
 
+[widget.spacer_2]
+type = "spacer"
+
 [widget.spacer_3]
+type = "spacer"
+
+[widget.spacer_4]
 type = "spacer"
 
 [widget.spacer_5]
