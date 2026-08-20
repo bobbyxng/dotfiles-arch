@@ -368,8 +368,8 @@ window-rule {
 }
 
 window-rule {
-    match app-id="firefox" title=".*Bitwarden.*"
-    default-column-width { proportion 0.2 ; }
+    match app-id="firefox"
+    default-column-width {}
     min-width 150
 }
 
