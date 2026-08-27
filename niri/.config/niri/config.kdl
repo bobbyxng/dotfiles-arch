@@ -686,6 +686,7 @@ binds {
     Alt+Tab hotkey-overlay-title="Window Switcher" { spawn-sh "noctalia msg window-switcher"; }
     Mod+P repeat=false hotkey-overlay-title="Mirror Output" { spawn-sh "wl-mirror $(niri msg -j focused-output | jq -r .name)"; }
     Mod+Delete hotkey-overlay-title="Retoggle All Monitors" { spawn-sh "niri msg action power-off-monitors; niri msg action power-on-monitors; niri msg output eDP-1 on"; }    
+    Ctrl+Space hotkey-overlay-title="Play/Pause" { spawn-sh "playerctl play-pause"; }
 
     // logitech mx keys mini
     // screenshot

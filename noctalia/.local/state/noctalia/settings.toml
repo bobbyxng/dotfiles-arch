@@ -304,11 +304,11 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
     box_height = 196.0
     box_width = 810.0
-    cx = 940.7347412109375
-    cy = 968.4033203125
+    cx = 1646.0
+    cy = 1694.0
     output = "eDP-1"
-    placement_height = 1029.0
-    placement_width = 1646.0
+    placement_height = 1800.0
+    placement_width = 2880.0
     rotation = 0.0
     type = "login_box"
 
