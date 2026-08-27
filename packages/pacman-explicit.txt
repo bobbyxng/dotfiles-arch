@@ -1,4 +1,5 @@
 amd-ucode
+baobab
 base
 base-devel
 bitwarden-cli
@@ -13,11 +14,13 @@ efibootmgr
 evince
 fastfetch
 firefox
+flatpak
 fuse2
 fzf
 gimp
 git
 github-cli
+gnome-disk-utility
 gnome-keyring
 gradle
 gst-plugin-pipewire
@@ -44,6 +47,7 @@ neovide
 neovim
 networkmanager
 niri
+nm-connection-editor
 noctalia
 noto-fonts
 noto-fonts-cjk
@@ -58,12 +62,16 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 pixi
+playerctl
 plymouth
+polkit-gnome
 power-profiles-daemon
+rsync
 rust
 sddm
 sddm-astronaut-theme
 seatd
+signal-desktop
 snapper
 sof-firmware
 solaar
@@ -95,7 +103,6 @@ ttf-liberation
 udiskie
 ufw
 visual-studio-code-bin
-vlc
 wev
 wget
 wireplumber
