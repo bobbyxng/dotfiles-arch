@@ -39,5 +39,6 @@
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-    "workbench.colorTheme": "Light 2026"
+    "workbench.colorTheme": "Light 2026",
+    "window.confirmBeforeClose": "always"
 }
