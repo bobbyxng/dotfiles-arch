@@ -113,7 +113,7 @@ input {
 // https://niri-wm.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 16
+    gaps 10
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -161,7 +161,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 4
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -356,6 +356,12 @@ window-rule {
 }
 
 // Custom program settings
+window-rule {
+    match app-id="io.ente.auth"
+    default-column-width { proportion 0.2; }
+    min-width 150
+}
+
 window-rule {
     match app-id="kitty"
     default-column-width { proportion 0.33; }
@@ -675,11 +681,11 @@ binds {
     Mod+Alt+Escape hotkey-overlay-title="Lock Screen" { spawn-sh "noctalia msg session lock"; }
     Mod+Space hotkey-overlay-title="Open Launcher" { spawn-sh "noctalia msg panel-toggle launcher"; }
     Mod+S hotkey-overlay-title="Control Center" { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+N hotkey-overlay-title="Notiications" { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
+    Mod+N hotkey-overlay-title="Notifications" { spawn-sh "noctalia msg panel-toggle control-center notifications"; }
     Mod+0 hotkey-overlay-title="Settings" { spawn-sh "noctalia msg settings-toggle"; }
     Alt+Tab hotkey-overlay-title="Window Switcher" { spawn-sh "noctalia msg window-switcher"; }
     Mod+P repeat=false hotkey-overlay-title="Mirror Output" { spawn-sh "wl-mirror $(niri msg -j focused-output | jq -r .name)"; }
-    Mod+Delete hotkey-overlay-title="Retoggle All Screens" { spawn-sh "niri msg action power-off-monitors; niri msg action power-on-monitors; niri msg output eDP-1 on"; }    
+    Mod+Delete hotkey-overlay-title="Retoggle All Monitors" { spawn-sh "niri msg action power-off-monitors; niri msg action power-on-monitors; niri msg output eDP-1 on"; }    
 
     // logitech mx keys mini
     // screenshot
@@ -693,3 +699,5 @@ binds {
 
 // Monique monitor configuration
 include "monitors.kdl"
+
+include "noctalia.kdl"
