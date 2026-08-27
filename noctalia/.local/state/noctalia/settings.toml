@@ -1,6 +1,7 @@
 config_version = 13
 
 [bar.default]
+background_opacity = 0.79999998211860657
 center = [ "archbob", "clock" ]
 end = [
     "tray",
@@ -14,11 +15,13 @@ end = [
     "battery",
     "session"
 ]
+margin_ends = 50
 start = [
     "workspaces",
     "group:g1",
     "spacer_4",
     "launcher",
+    "notifications",
     "clipboard",
     "mirror",
     "status",
@@ -27,6 +30,7 @@ start = [
     "cpu",
     "eyecare-widget"
 ]
+thickness = 28
 
     [[bar.default.capsule_group]]
     accordion = false
@@ -61,10 +65,10 @@ start = [
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
-    enabled = true
+    enabled = false
     fill = "surface_variant"
     id = "g3"
-    members = [ "notifications", "control-center" ]
+    members = [ "control-center" ]
     opacity = 1.0
     padding = 6.0
 
@@ -361,13 +365,16 @@ clipboard_history_max_entries = 20
     show_app_actions = true
 
     [shell.panel]
+    clipboard_placement = "attached"
+    open_near_click_clipboard = true
     open_near_click_control_center = true
+    polkit_placement = "attached"
     transparency_mode = "soft"
 
 [theme]
 builtin = "Nord"
 community_palette = "Oxocarbon"
-mode = "dark"
+mode = "light"
 source = "wallpaper"
 wallpaper_scheme = "soft"
 
