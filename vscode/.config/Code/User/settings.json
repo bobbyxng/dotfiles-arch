@@ -40,5 +40,6 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "workbench.colorTheme": "Light 2026",
-    "window.confirmBeforeClose": "always"
+    "window.confirmBeforeClose": "always",
+    "claudeCode.focusView": true
 }
