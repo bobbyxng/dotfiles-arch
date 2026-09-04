@@ -285,11 +285,11 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@DP-9"]
     box_height = 196.0
     box_width = 720.0
-    cx = 1536.0
-    cy = 1465.9200439453125
+    cx = 960.0
+    cy = 1018.0
     output = "DP-9"
-    placement_height = 1728.0
-    placement_width = 3072.0
+    placement_height = 1200.0
+    placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
 
@@ -425,7 +425,7 @@ transition_duration = 1000
     path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
 
     [wallpaper.monitors.DP-7]
-    path = "/home/bxiong/Pictures/Wallpapers/curvy-l.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
 
     [wallpaper.monitors.DP-8]
     path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
