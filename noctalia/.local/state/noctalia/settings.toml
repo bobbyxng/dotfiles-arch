@@ -5,7 +5,7 @@ sound_volume = 0.099999997764825821
 
 [bar.default]
 background_opacity = 0.79999998211860657
-center = [ "archbob", "clock" ]
+center = [ "archbob", "clock", "bar" ]
 end = [
     "tray",
     "spacer_3",
@@ -385,7 +385,8 @@ enabled = [
     "aristides/udiskie",
     "apex077/eyecare",
     "frai3mega/battery-graph",
-    "blackbartblues/audio-switcher"
+    "blackbartblues/audio-switcher",
+    "raycursive/discord-voice"
 ]
 
 [shell]
@@ -393,7 +394,6 @@ clipboard_history_max_entries = 20
 
     [shell.launcher]
     provider_prefix = "#"
-    show_app_actions = true
 
     [shell.panel]
     clipboard_placement = "attached"
@@ -445,6 +445,10 @@ type = "text"
     left = "panel-toggle control-center notifications"
     middle = "settings-open-widget"
     right = "notification-dnd-toggle"
+
+[widget.bar]
+hide_when_disconnected = true
+type = "raycursive/discord-voice:bar"
 
 [widget.clipboard.actions]
 right = "clipboard-clear"
