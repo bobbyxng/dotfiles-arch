@@ -1,4 +1,5 @@
 amd-ucode
+apptainer
 baobab
 base
 base-devel
@@ -10,11 +11,14 @@ btrfs-progs
 cups
 cups-pk-helper
 discord
+docker
+docker-buildx
 efibootmgr
 evince
 fastfetch
 firefox
 flatpak
+freerdp
 fuse2
 fzf
 gimp
@@ -24,6 +28,7 @@ gnome-disk-utility
 gnome-keyring
 gradle
 gst-plugin-pipewire
+gtk-vnc
 htop
 imv
 inkscape
@@ -32,7 +37,9 @@ jq
 kitty
 less
 libpulse
+libreoffice-still
 libva-utils
+libvncserver
 limine
 limine-mkinitcpio-hook
 limine-snapper-sync
@@ -57,6 +64,8 @@ openconnect
 pacman-contrib
 paru
 paru-debug
+perl-file-homedir
+perl-yaml-tiny
 pipewire
 pipewire-alsa
 pipewire-jack
@@ -66,6 +75,7 @@ playerctl
 plymouth
 polkit-gnome
 power-profiles-daemon
+remmina
 rsync
 rust
 sddm
@@ -86,6 +96,7 @@ system-config-printer
 terminus-font
 texlive-basic
 texlive-bibtexextra
+texlive-binextra
 texlive-fontsextra
 texlive-fontsrecommended
 texlive-latex
