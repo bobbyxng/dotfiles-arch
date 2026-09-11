@@ -1,4 +1,4 @@
-config_version = 13
+config_version = 14
 
 [audio]
 sound_volume = 0.099999997764825821
@@ -390,7 +390,7 @@ enabled = [
 ]
 
 [shell]
-clipboard_history_max_entries = 20
+clipboard_history_max_entries = 10
 
     [shell.launcher]
     provider_prefix = "#"
