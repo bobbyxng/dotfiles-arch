@@ -460,6 +460,7 @@ format = "{:%H:%M ∙ %a, %d. %b}"
     right = "exec thunderbird -calendar"
 
 [widget.cpu]
+label_min_width = 28
 visualization = "none"
 
 [widget.eyecare-widget]
@@ -478,14 +479,17 @@ show_label = false
     right = "exec nm-connection-editor"
 
 [widget.network_rx]
-label_min_width = 42
+label_min_width = 32
+label_show_units = false
 visualization = "none"
 
 [widget.network_tx]
-label_min_width = 42
+label_min_width = 32
+label_show_units = false
 visualization = "none"
 
 [widget.ram]
+label_min_width = 55
 visualization = "none"
 
 [widget.spacer_2]
