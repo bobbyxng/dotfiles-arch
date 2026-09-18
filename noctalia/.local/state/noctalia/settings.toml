@@ -4,7 +4,7 @@ config_version = 14
 sound_volume = 0.099999997764825821
 
 [bar.default]
-background_opacity = 0.79999998211860657
+background_opacity = 0.39999999105930328
 center = [ "archbob", "clock", "bar" ]
 end = [
     "tray",
@@ -391,6 +391,7 @@ enabled = [
 
 [shell]
 clipboard_history_max_entries = 10
+settings_window_translucent = true
 
     [shell.launcher]
     provider_prefix = "#"
@@ -437,7 +438,6 @@ transition_duration = 1000
     path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
 
 [widget.archbob]
-color = "tertiary"
 text = "niribob"
 type = "text"
 
@@ -468,8 +468,11 @@ enabled = false
 [widget.mirror]
 type = "elijaharch/wl-screen-mirror:mirror"
 
-[widget.network.actions]
-right = "exec nm-connection-editor"
+[widget.network]
+show_label = false
+
+    [widget.network.actions]
+    right = "exec nm-connection-editor"
 
 [widget.network_rx]
 label_min_width = 42
