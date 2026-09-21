@@ -286,7 +286,7 @@ widget_order = [
     box_height = 196.0
     box_width = 720.0
     cx = 1536.0
-    cy = 1465.9200439453125
+    cy = 1465.919921875
     output = "DP-9"
     placement_height = 1728.0
     placement_width = 3072.0
@@ -420,22 +420,22 @@ transition = [ "disc", "fade", "zoom" ]
 transition_duration = 1000
 
     [wallpaper.default]
-    path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
 
     [wallpaper.last]
-    path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
 
     [wallpaper.monitors.DP-7]
-    path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
 
     [wallpaper.monitors.DP-8]
-    path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
 
     [wallpaper.monitors.DP-9]
-    path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/bxiong/Pictures/Wallpapers/amber-d.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
 
 [widget.archbob]
 text = "niribob"
