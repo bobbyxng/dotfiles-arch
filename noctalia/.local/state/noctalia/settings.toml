@@ -613,3 +613,5 @@ type = "blackbartblues/audio-switcher:widget"
 
 [widget.workspaces]
 capsule_opacity = 0.5
+hide_when_empty = true
+labels_only_when_occupied = true
