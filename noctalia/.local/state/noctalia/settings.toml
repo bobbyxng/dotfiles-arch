@@ -7,7 +7,7 @@ sound_volume = 0.099999997764825821
 background_opacity = 0.39999999105930328
 center = [ "bar", "workspaces" ]
 end = [ "group:g3", "group:g2", "group:g4", "group:g6", "spacer_6", "battery", "session" ]
-margin_ends = 50
+margin_edge = 4
 start = [ "group:g1", "launcher", "spacer_3", "group:g7", "group:g5", "group:g8" ]
 thickness = 28
 
@@ -504,7 +504,6 @@ settings_window_translucent = true
     open_near_click_clipboard = true
     open_near_click_control_center = true
     polkit_placement = "attached"
-    transparency_mode = "soft"
 
 [theme]
 builtin = "Nord"
@@ -613,5 +612,4 @@ mute_color = "tertiary"
 type = "blackbartblues/audio-switcher:widget"
 
 [widget.workspaces]
-capsule = true
 capsule_opacity = 0.5
