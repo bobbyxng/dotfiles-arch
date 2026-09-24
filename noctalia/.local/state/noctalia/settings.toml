@@ -522,10 +522,10 @@ transition = [ "disc", "fade", "zoom" ]
 transition_duration = 1000
 
     [wallpaper.default]
-    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/glass-chip-l.jpg"
 
     [wallpaper.last]
-    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/glass-chip-l.jpg"
 
     [wallpaper.monitors.DP-7]
     path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
@@ -536,8 +536,11 @@ transition_duration = 1000
     [wallpaper.monitors.DP-9]
     path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
 
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/bxiong/Pictures/Wallpapers/glass-chip-l.jpg"
+
     [wallpaper.monitors.eDP-1]
-    path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
+    path = "/home/bxiong/Pictures/Wallpapers/glass-chip-l.jpg"
 
 [widget.bar]
 hide_when_disconnected = true
