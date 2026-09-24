@@ -5,34 +5,10 @@ sound_volume = 0.099999997764825821
 
 [bar.default]
 background_opacity = 0.39999999105930328
-center = [ "archbob", "clock", "bar" ]
-end = [
-    "tray",
-    "spacer_3",
-    "network_rx",
-    "network_tx",
-    "group:g2",
-    "group:g4",
-    "group:g3",
-    "spacer_6",
-    "battery",
-    "session"
-]
+center = [ "bar", "workspaces" ]
+end = [ "group:g3", "group:g2", "group:g4", "group:g6", "spacer_6", "battery", "session" ]
 margin_ends = 50
-start = [
-    "workspaces",
-    "group:g1",
-    "spacer_4",
-    "launcher",
-    "notifications",
-    "clipboard",
-    "mirror",
-    "status",
-    "spacer_2",
-    "ram",
-    "cpu",
-    "eyecare-widget"
-]
+start = [ "group:g1", "launcher", "spacer_3", "group:g7", "group:g5", "group:g8" ]
 thickness = 28
 
     [[bar.default.capsule_group]]
@@ -52,7 +28,7 @@ thickness = 28
     fill = "surface_variant"
     id = "g2"
     members = [ "network", "bluetooth" ]
-    opacity = 1.0
+    opacity = 0.5
     padding = 6.0
 
     [[bar.default.capsule_group]]
@@ -62,17 +38,57 @@ thickness = 28
     fill = "surface_variant"
     id = "g4"
     members = [ "volume", "widget", "brightness" ]
-    opacity = 1.0
+    opacity = 0.5
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "start"
+    enabled = true
+    fill = "surface_variant"
+    id = "g3"
+    members = [ "network_rx", "network_tx" ]
+    opacity = 0.5
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g5"
+    members = [ "ram", "cpu" ]
+    opacity = 0.5
     padding = 6.0
 
     [[bar.default.capsule_group]]
     accordion = false
     accordion_direction = "end"
-    enabled = false
+    enabled = true
     fill = "surface_variant"
-    id = "g3"
-    members = [ "control-center" ]
-    opacity = 1.0
+    id = "g6"
+    members = [ "tray", "status" ]
+    opacity = 0.5
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = false
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g7"
+    members = [ "notifications", "clipboard", "mirror" ]
+    opacity = 0.5
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    accordion = true
+    accordion_direction = "end"
+    enabled = true
+    fill = "surface_variant"
+    id = "g8"
+    members = [ "clock", "eyecare-widget" ]
+    opacity = 0.5
     padding = 6.0
 
 [calendar]
@@ -132,6 +148,9 @@ auto_locate = true
 enabled = false
 schema_version = 2
 widget_order = [
+    "lockscreen-login-box@DP-14",
+    "lockscreen-login-box@DP-12",
+    "lockscreen-login-box@DP-6",
     "lockscreen-login-box@DP-1",
     "lockscreen-login-box@DP-10",
     "lockscreen-login-box@HDMI-A-1",
@@ -213,6 +232,87 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@DP-11".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-12"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 1018.0
+    output = "DP-12"
+    placement_height = 1200.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-12".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-14"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 1018.0
+    output = "DP-14"
+    placement_height = 1200.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-14".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@DP-6"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 1536.0
+    cy = 1436.800048828125
+    output = "DP-6"
+    placement_height = 1728.0
+    placement_width = 3072.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@DP-6".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -313,9 +413,9 @@ widget_order = [
     box_height = 196.0
     box_width = 810.0
     cx = 960.0
-    cy = 1018.0
+    cy = 916.199951171875
     output = "HDMI-A-1"
-    placement_height = 1200.0
+    placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
@@ -362,6 +462,9 @@ widget_order = [
         show_session_buttons = true
         show_unlock_hint = true
         show_weather = true
+
+[plugin_settings."apex077/eyecare"]
+enable_sound = false
 
 [plugin_settings."aristides/udiskie"]
 manager_open_near_click = true
@@ -437,24 +540,18 @@ transition_duration = 1000
     [wallpaper.monitors.eDP-1]
     path = "/home/bxiong/Pictures/Wallpapers/blendpills-l.jpg"
 
-[widget.archbob]
-text = "niribob"
-type = "text"
-
-    [widget.archbob.actions]
-    left = "panel-toggle control-center notifications"
-    middle = "settings-open-widget"
-    right = "notification-dnd-toggle"
-
 [widget.bar]
 hide_when_disconnected = true
 type = "raycursive/discord-voice:bar"
+
+[widget.bluetooth]
+capsule = true
 
 [widget.clipboard.actions]
 right = "clipboard-clear"
 
 [widget.clock]
-format = "{:%H:%M ∙ %a, %d. %b}"
+format = "{:%a %d. %b, %H:%M}"
 
     [widget.clock.actions]
     right = "exec thunderbird -calendar"
@@ -489,16 +586,11 @@ label_show_units = false
 visualization = "none"
 
 [widget.ram]
-label_min_width = 55
+label_min_width = 28
+label_show_units = false
 visualization = "none"
 
-[widget.spacer_2]
-type = "spacer"
-
 [widget.spacer_3]
-type = "spacer"
-
-[widget.spacer_4]
 type = "spacer"
 
 [widget.spacer_6]
@@ -508,8 +600,18 @@ type = "spacer"
 hide_when_empty = true
 type = "aristides/udiskie:status"
 
+[widget.tray]
+capsule_opacity = 0.5
+drawer = true
+drawer_columns = 5
+match_adjacent_spacing = true
+
 [widget.volume]
 mute_color = "tertiary"
 
 [widget.widget]
 type = "blackbartblues/audio-switcher:widget"
+
+[widget.workspaces]
+capsule = true
+capsule_opacity = 0.5
