@@ -1,4 +1,4 @@
-config_version = 14
+config_version = 15
 
 [audio]
 sound_volume = 0.099999997764825821
@@ -197,9 +197,9 @@ widget_order = [
     box_height = 196.0
     box_width = 810.0
     cx = 960.0
-    cy = 997.77783203125
+    cy = 898.0
     output = "DP-10"
-    placement_height = 1200.0
+    placement_height = 1080.0
     placement_width = 1920.0
     rotation = 0.0
     type = "login_box"
@@ -223,11 +223,11 @@ widget_order = [
     [lockscreen_widgets.widget."lockscreen-login-box@DP-11"]
     box_height = 196.0
     box_width = 720.0
-    cx = 960.0
-    cy = 1131.1112060546875
+    cx = 1536.0
+    cy = 1628.8001708984375
     output = "DP-11"
-    placement_height = 1200.0
-    placement_width = 1920.0
+    placement_height = 1728.0
+    placement_width = 3072.0
     rotation = 0.0
     type = "login_box"
 
@@ -497,7 +497,9 @@ clipboard_history_max_entries = 10
 settings_window_translucent = true
 
     [shell.launcher]
-    provider_prefix = "#"
+    category_icons_only = true
+    layout = "simple"
+    provider_prefix = ":"
 
     [shell.panel]
     clipboard_placement = "attached"
